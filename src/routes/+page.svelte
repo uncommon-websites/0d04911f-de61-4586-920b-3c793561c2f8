@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	centered={false}
+	title="Find your calm in the chaos of school, social life, and everything in between"
+	subtitle="Real-time biometric insights meet personalized mindfulness to help you navigate stress with confidence and clarity."
+	imageSrc="/generated/image-a-confident-teenage-student-stands-smili.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by leading organizations supporting teen wellness"
+	logoUrls={[
+		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/calm.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/betterhelp.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/nami.org/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
