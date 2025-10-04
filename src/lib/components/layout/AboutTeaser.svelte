@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Rushil Chopra",
+		role: "Founder",
+		image: "/generated/image-a-founder-in-a-sunlit-modern-office-spac.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I watched my younger sister struggle with anxiety through high school while therapy costs kept climbing. I realized we needed something that could be there in the moment, not just once a week. That's when I knew we had to build OMiE."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
