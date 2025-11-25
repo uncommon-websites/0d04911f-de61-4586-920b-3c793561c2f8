@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Rushil Chopra",
+		role: "CEO & Co-Founder",
+		image: "/generated/image-a-teenage-male-founder-visibly-15-19-yea.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"I spent years watching friends spiral into anxiety alone, too scared to ask for help. We built this because everyone deserves someone who actually listens, especially when it's 2am and you can't quiet your mind."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

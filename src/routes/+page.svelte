@@ -26,62 +26,91 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Mental health support, right in your texts"
+	text="We're an AI companion that lives in iMessage, so you can check in on your feelings as easily as texting a friend. Whether you're dealing with stress from school, anxiety about the future, or just feeling off, we help you understand your patterns and build strategies that actually work for you. No apps to download, no stigma, just real support when you need it."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Mehta",
+			position: "College Student",
+			company: "UC Berkeley",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"I used to wait weeks for therapy appointments when I was really struggling. Now I can talk through anxiety the moment it hits, right in iMessage. It's like having support in my pocket 24/7 without the $200/session price tag.",
+			image: "/generated/image-medium-close-portrait-of-a-south-asian-t.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Thompson",
+			position: "High School Senior",
+			company: "Oakland High School",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Before this, I'd bottle everything up until it got really bad. The mood tracking caught my stress spiraling way earlier, and I learned actual coping techniques instead of just scrolling TikTok at 2am. Honestly saved me from some dark places.",
+			image: "/generated/image-medium-close-portrait-of-a-black-teenage.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Sofia Ramirez",
+			position: "College Freshman",
+			company: "Stanford University",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The fact that it's free and just lives in iMessage made it so easy to start. No awkward app downloads, no insurance hassles, no judgment. I've learned more about managing my anxiety in three months than I did in years of avoiding the problem.",
+			image: "/generated/image-medium-close-portrait-of-a-hispanic-teen.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Built for how you actually live"
+	subtitle="Real support that meets you where you are, right in your messages"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Chat naturally in iMessage",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"No new apps to download or accounts to create. Just text like you're talking to a friend who really listens and understands what you're going through."
 		},
 		{
-			title: "Data Analysis",
+			title: "Spot patterns before you do",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Our AI notices subtle shifts in your mood over time, helping you see triggers and patterns you might miss on your own."
 		},
 		{
-			title: "Secure Collaboration",
+			title: "Get strategies that actually work",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Personalized coping techniques that adapt to your unique situation, not generic advice that sounds good but never helps."
+		},
+		{
+			title: "Connect with your whole wellness",
+			description:
+				"Integrates with Apple Health to understand how sleep, activity, and daily rhythms affect how you feel."
+		},
+		{
+			title: "Express yourself your way",
+			description:
+				"Voice notes when you can't type, text when you need to think through it. Journal however feels right in the moment."
+		},
+		{
+			title: "Matches how you talk",
+			description:
+				"Learns your language and tone over time, so conversations feel natural instead of robotic or overly clinical."
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Your next conversation could change everything"
+	subtitle="Start for free, no app required"
+	description="You don't need to wait for a therapy appointment or figure this out alone. Text us right now in iMessage and start building strategies that actually help. Free to start, zero judgment, always in your pocket when you need support most."
+	imageSrc="/generated/image-a-genuine-teen-age-15-19-sits-quietly-ou.webp"
+	callsToAction={[
+		{
+			href: "/",
+			label: "Start chatting now",
+			variant: "primary"
+		},
+		{
+			href: "/about",
+			label: "Learn how it works",
+			variant: "secondary"
+		}
+	]}
+/>
