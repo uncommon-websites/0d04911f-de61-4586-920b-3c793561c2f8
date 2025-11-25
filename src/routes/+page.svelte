@@ -1,33 +1,54 @@
 <script lang="ts">
 	// Components
-	import Summary from "$lib/components/layout/Summary.svelte";
+	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
 	import Features from "$lib/components/layout/Features.svelte";
 	import Testimonials from "$lib/components/layout/Testimonials.svelte";
-	import CallToAction from "$lib/components/layout/CallToAction.svelte";
-	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
-	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import PricingTable from "$lib/components/layout/PricingTable.svelte";
 </script>
 
 <Hero
-	title="Your mental health matters, and you don't have to figure it out alone"
-	subtitle="Chat naturally in iMessage with an AI companion that actually gets you, tracks your mood patterns, and helps you build real coping strategies for stress, anxiety, and everything in between."
-	imageSrc="/generated/image-a-candid-portrait-of-a-diverse-teen-visi.webp"
-	centered={false}
-/>
-<LogoScroller
-	label="Trusted by the wellness community"
-	logoUrls={[
-		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo',
-		'https://cdn.brandfetch.io/betterhelp.com/w/400/h/400/logo',
-		'https://cdn.brandfetch.io/talkspace.com/w/400/h/400/logo',
-		'https://cdn.brandfetch.io/calm.com/w/400/h/400/logo'
-	]}
+	title="Meet Tovi, your AI mental health companion"
+	subtitle="Chat naturally through iMessage. Get real support for stress, anxiety, and everything in between. No apps, no stigma, just you and Tovi."
+	imageSrc="/generated/image-a-genuine-teenage-girl-around-16-sits-on.webp"
+	centered={true}
+	showPhoneSignup={true}
 />
 
-<Summary
-	title="Mental health support, right in your texts"
-	text="We're an AI companion that lives in iMessage, so you can check in on your feelings as easily as texting a friend. Whether you're dealing with stress from school, anxiety about the future, or just feeling off, we help you understand your patterns and build strategies that actually work for you. No apps to download, no stigma, just real support when you need it."
+<Features
+	title="How Tovi helps you thrive"
+	subtitle="Mental health support that fits into your life"
+	features={[
+		{
+			title: "Chat naturally in iMessage",
+			description:
+				"No new apps to download. Just text Tovi like you're talking to a friend who really gets you."
+		},
+		{
+			title: "Detect mood patterns",
+			description:
+				"Tovi notices subtle shifts in your emotions over time, helping you understand what triggers stress or anxiety."
+		},
+		{
+			title: "Get personalized strategies",
+			description:
+				"Receive coping techniques tailored to your unique situation, not generic advice that never helps."
+		},
+		{
+			title: "Track emotional shifts",
+			description:
+				"See how your feelings change day to day, and learn what helps you feel better."
+		},
+		{
+			title: "Connect with Apple Health",
+			description:
+				"Understand how sleep, activity, and daily rhythms affect your mental wellbeing."
+		},
+		{
+			title: "Voice or text journaling",
+			description:
+				"Express yourself however feels right in the moment, whether that's typing or talking."
+		}
+	]}
 />
 
 <Testimonials
@@ -59,58 +80,124 @@
 	]}
 />
 
-<Features
-	title="Built for how you actually live"
-	subtitle="Real support that meets you where you are, right in your messages"
-	features={[
+<PricingTable
+	title="Simple, transparent pricing"
+	subtitle="Start free, upgrade when you're ready"
+	tiers={[
 		{
-			title: "Chat naturally in iMessage",
-			description:
-				"No new apps to download or accounts to create. Just text like you're talking to a friend who really listens and understands what you're going through."
+			name: "Free",
+			monthlyPrice: 0,
+			yearlyPrice: 0,
+			description: "Get started with essential mental health support",
+			features: [
+				"Unlimited messaging with Tovi",
+				"Basic mood tracking",
+				"Daily check-ins",
+				"Personalized coping strategies",
+				"Text and voice journaling"
+			],
+			cta: {
+				label: "Start free",
+				href: "/"
+			},
+			highlight: false
 		},
 		{
-			title: "Spot patterns before you do",
-			description:
-				"Our AI notices subtle shifts in your mood over time, helping you see triggers and patterns you might miss on your own."
+			name: "Premium",
+			monthlyPrice: 9.99,
+			yearlyPrice: 7.99,
+			description: "Advanced insights and personalized coaching",
+			features: [
+				"Everything in Free",
+				"Advanced mood pattern analysis",
+				"Apple Health integration",
+				"Weekly progress reports",
+				"Priority support",
+				"Personalized coaching sessions"
+			],
+			cta: {
+				label: "Upgrade to Premium",
+				href: "/"
+			},
+			highlight: true
 		},
 		{
-			title: "Get strategies that actually work",
-			description:
-				"Personalized coping techniques that adapt to your unique situation, not generic advice that sounds good but never helps."
-		},
-		{
-			title: "Connect with your whole wellness",
-			description:
-				"Integrates with Apple Health to understand how sleep, activity, and daily rhythms affect how you feel."
-		},
-		{
-			title: "Express yourself your way",
-			description:
-				"Voice notes when you can't type, text when you need to think through it. Journal however feels right in the moment."
-		},
-		{
-			title: "Matches how you talk",
-			description:
-				"Learns your language and tone over time, so conversations feel natural instead of robotic or overly clinical."
+			name: "School/Organization",
+			monthlyPrice: null,
+			yearlyPrice: null,
+			description: "Mental health support for your entire community",
+			features: [
+				"Everything in Premium",
+				"Bulk licensing for schools or organizations",
+				"Admin dashboard and analytics",
+				"Custom integration options",
+				"Dedicated account manager",
+				"Training and onboarding support"
+			],
+			cta: {
+				label: "Contact us",
+				href: "/contact"
+			},
+			highlight: false
 		}
 	]}
-/>
-<AboutTeaser />
-<CallToAction
-	title="Your next conversation could change everything"
-	subtitle="Start for free, no app required"
-	description="You don't need to wait for a therapy appointment or figure this out alone. Text us right now in iMessage and start building strategies that actually help. Free to start, zero judgment, always in your pocket when you need support most."
-	imageSrc="/generated/image-a-genuine-teen-age-15-19-sits-quietly-ou.webp"
-	callsToAction={[
+	tierNames={["Free", "Premium", "School/Organization"]}
+	features={[
 		{
-			href: "/",
-			label: "Start chatting now",
-			variant: "primary"
+			name: "Messaging with Tovi",
+			tiers: {
+				Free: "Unlimited",
+				Premium: "Unlimited",
+				"School/Organization": "Unlimited"
+			}
 		},
 		{
-			href: "/about",
-			label: "Learn how it works",
-			variant: "secondary"
+			name: "Mood tracking",
+			tiers: {
+				Free: "Basic",
+				Premium: "Advanced",
+				"School/Organization": "Advanced"
+			}
+		},
+		{
+			name: "Apple Health integration",
+			tiers: {
+				Free: false,
+				Premium: true,
+				"School/Organization": true
+			}
+		},
+		{
+			name: "Progress reports",
+			tiers: {
+				Free: false,
+				Premium: "Weekly",
+				"School/Organization": "Weekly"
+			}
+		},
+		{
+			name: "Personalized coaching",
+			tiers: {
+				Free: false,
+				Premium: true,
+				"School/Organization": true
+			}
+		},
+		{
+			name: "Admin dashboard",
+			tiers: {
+				Free: false,
+				Premium: false,
+				"School/Organization": true
+			}
+		},
+		{
+			name: "Support response time",
+			tiers: {
+				Free: "24 hours",
+				Premium: "4 hours",
+				"School/Organization": "1 hour"
+			}
 		}
 	]}
 />

@@ -26,14 +26,13 @@
     - `subtitle`: Supporting text (string)
     - `imageSrc`: Hero image URL (string)
     - `callsToAction`: CTA buttons array (max two: primary, secondary)
-    - `showPhoneSignup`: Show phone signup form instead of CTAs (boolean)
 -->
 
 <script lang="ts">
 	// Components
 	import AnimateText from "$lib/components/animation/AnimateText.svelte";
 	import Button from "$lib/components/ui/Button.svelte";
-	import PhoneInput from "$lib/components/ui/PhoneInput.svelte";
+	import PhoneSignup from "$lib/components/ui/PhoneSignup.svelte";
 
 	// Constants
 	import { cta } from "$lib/navigation";
@@ -66,11 +65,6 @@
 		centered = false,
 		...rest
 	}: Props = $props();
-
-	function handlePhoneSubmit(phone: string) {
-		console.log('Phone submitted:', phone);
-		// TODO: Handle phone number submission
-	}
 </script>
 
 <div class="bg-background" {...rest}>
@@ -94,6 +88,7 @@
 					data-enter
 					class={[
 						"text-muted-foreground text-headline mx-auto block max-w-[45ch] transition duration-500 ease-out"
+						// isTitleComplete ? "opacity-100" : "translate-y-2 opacity-0 blur-sm"
 					]}
 				>
 					{subtitle}
@@ -103,7 +98,7 @@
 
 		{#if showPhoneSignup}
 			<div data-enter class="w-full max-w-md">
-				<PhoneInput onsubmit={handlePhoneSubmit} />
+				<PhoneSignup />
 			</div>
 		{:else if callsToAction.length > 0}
 			<div class="flex gap-4" data-enter>
