@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+	title="Your mental health matters, and you don't have to figure it out alone"
+	subtitle="Chat naturally in iMessage with an AI companion that actually gets you, tracks your mood patterns, and helps you build real coping strategies for stress, anxiety, and everything in between."
+	imageSrc="/generated/image-a-candid-portrait-of-a-diverse-teen-visi.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by the wellness community"
+	logoUrls={[
+		'https://cdn.brandfetch.io/headspace.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/betterhelp.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/talkspace.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/calm.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
